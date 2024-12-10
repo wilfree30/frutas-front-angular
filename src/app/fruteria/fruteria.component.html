@@ -1,0 +1,24 @@
+<h2>Nuestra Frutería</h2> <p>Información sobre nuestra frutería local</p>
+<div class="container mt-5">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Stock</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Iteramos los datos -->
+        @for (fruta of frutas; track fruta.id) {
+            <tr>
+                <th scope="row"></th>
+                <td>{{ fruta.id }}</td>
+                <td>{{ fruta.name }}</td>
+                <td>{{ fruta.instock }}</td>
+            </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+  
